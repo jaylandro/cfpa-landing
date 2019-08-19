@@ -1,0 +1,233 @@
+body {
+	background-image: linear-gradient(
+		135deg,
+		#f5f7fa 0%,
+		#c3cfe2 100%
+	);
+	font-family: 'Noto Serif', Serif;
+	font-size: 16px;
+	margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Fira Sans', Sans-Serif;
+	margin-bottom: 0.2em;
+}
+.contain {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 1.5em;
+}
+.contain p {
+	line-height: 1.65em;
+	margin-top: 0;
+}
+.black {
+	background: black;
+	padding: 1.5em;
+	color: white;
+}
+.donate-jump {
+	max-width: 380px;
+	margin: 0 auto;
+	display: block;
+}
+hr {
+	border: none;
+	outline: none;
+	height: 1px;
+	background-color: black;
+}
+blockquote {
+	font-style: italic;
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.1);
+	margin-bottom: 0.2em;
+	margin-top: 0;
+	max-width: 300px;
+	float: right;
+}
+.author {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+.tagline {
+	margin: 5px 0 32px 0;
+}
+#square {
+	width: 100px;
+}
+.full-bg {
+	background-image: linear-gradient(
+		rgba(0, 0, 0, 0.3),
+		rgba(0, 0, 0, 0.3)
+		),
+		url('/images/rendering.jpg');
+	background-size: cover;
+	background-position: center center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.top-text {
+	font-family: 'Fira Sans', Sans-Serif;
+	font-weight: bold;
+	/* background-color:  rgba(0, 0, 0, 0.7); */
+	text-shadow: #000000 1px 1px 2px,  rgba(0,0,0,0.7) 2px 2px 10px;
+	padding: 0.8rem;
+	color: white;
+	display: block;
+	max-width: 750px;
+	margin: 0 auto;
+	padding-top: 0;
+}
+.top-text p, .top-text h2 {
+	letter-spacing: 2.1px;
+}
+input[type="submit"] {
+	cursor: pointer;
+}
+.top-h2 {
+	margin-bottom: 0.9rem;
+}
+.donate-language {
+	padding: 1.5em;
+	font-size: 14px;
+	line-height: 1.6em;
+}
+.contact {
+	font-size: 14px;
+	text-align: left;
+}
+.contact a {
+	color:#ced8e8;
+}
+#email-signup {
+	font-size: 20px;
+	margin: 0.6rem;
+	padding: 0.6rem;
+	border-radius: 3px;
+	border: none;
+	margin-left: 0;
+}
+.black .contain {
+	padding: 0;
+}
+#sq-amount {
+	font-size: 16px; 
+	line-height: 24px; 
+	padding: 16px; 
+	width: 100%; 
+	margin-bottom: 16px;
+}
+@media only screen and (max-width: 900px) {
+	blockquote {
+		float: none;
+		max-width: 100%;
+		margin: 0.2em 0;
+	}
+	
+}
+ul {
+	margin-top: 8px;
+	padding-left: 20px;
+}
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body,
+html {
+	background-color: #f7f8f9;
+	color: #373f4a;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	/* height: 100%; */
+}
+
+button {
+	border: 0;
+	font-weight: 500;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#form-container {
+	position: relative;
+	max-width: 480px;
+	margin: 0 auto;
+	/* top: 50%; */
+	/* transform: translateY(-50%); */
+}
+
+.third {
+	float: left;
+	width: calc((100% - 32px) / 3);
+	padding: 0;
+	margin: 0 16px 16px 0;
+}
+
+.third:last-of-type {
+	margin-right: 0;
+}
+
+/* Define how SqPaymentForm iframes should look */
+.sq-input {
+	height: 56px;
+	box-sizing: border-box;
+	border: 1px solid #e0e2e3;
+	background-color: white;
+	border-radius: 6px;
+	display: inline-block;
+	-webkit-transition: border-color 0.2s ease-in-out;
+	-moz-transition: border-color 0.2s ease-in-out;
+	-ms-transition: border-color 0.2s ease-in-out;
+	transition: border-color 0.2s ease-in-out;
+}
+
+/* Define how SqPaymentForm iframes should look when they have focus */
+.sq-input--focus {
+	border: 1px solid #6e4eec;
+}
+
+/* Define how SqPaymentForm iframes should look when they contain invalid values */
+.sq-input--error {
+	border: 1px solid #e02f2f;
+}
+
+#sq-card-number {
+	margin-bottom: 16px;
+}
+
+/* Customize the "Pay with Credit Card" button */
+.button-credit-card {
+	border-radius: 50px;
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.04);
+	height: auto;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	line-height: 24px;
+	margin-top: 16px;
+	padding: 16px;
+	position: relative;
+	text-transform: uppercase;
+	width: 100%;
+	z-index: 1;
+	background: linear-gradient(180deg, #8e72ff -57.14%, #6e4eec 125%);
+	border: none;
+	color: #fff;
+}
+
+.button-credit-card:hover {
+	background: linear-gradient(180deg, #a791ff -57.14%, #856aef 125%);
+	color: #fff;
+}

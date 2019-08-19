@@ -1,0 +1,23 @@
+{
+  "name": "cfpa-landing",
+  "version": "1.0.0",
+  "description": "Center for Performing Arts Investment &amp; Building Page",
+  "main": "functions/process-payment.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaylandro/cfpa-landing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaylandro/cfpa-landing/issues"
+  },
+  "homepage": "https://github.com/jaylandro/cfpa-landing#readme",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "square-connect": "^2.20190814.0"
+  }
+}

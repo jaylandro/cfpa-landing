@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>cfpa | Center for Performing Arts | Mpls</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Serif|Fira+Sans"
+      rel="stylesheet"
+    />
+    <link href="css/cfpalanding.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="https://js.squareupsandbox.com/v2/paymentform"
+    ></script>
+  </head>
+  <body>
+    <div class="black">
+      <img src="images/CFPA.png" />
+    </div>
+    <div class="full-bg">
+      <div class="contain">
+        <h1 class="top-text">Join Us!</h1>
+        <div class="top-text">
+          <h2 class="top-h2">
+            Cfpa is expanding its <em>mission</em>, <em>space</em>, and
+            <em>programming</em>
+          </h2>
+          <p>
+            Cfpa is building a new 20,000 square foot expansion on the existing
+            site. It will house more private office space, rehearsal/class
+            space, and two new 100 seat performance spaces. This project is
+            innovating a sustainable ecosystem for artists and arts businesses
+            in its design.
+          </p>
+        </div>
+        <br />
+        <a href="#donate" class="donate-jump">
+          <input
+            type="submit"
+            class="button-credit-card"
+            value="Donate Today"
+            id="jump-btn"
+          />
+        </a>
+      </div>
+    </div>
+    <div class="contain">
+      <h2 id="About">Make Social Impact.</h2>
+      <blockquote>
+        "Art has the potential to unify. It can speak in many languages without
+        a translator. The arts do not discriminate. The arts can lift us up."<br /><br />
+
+        <span class="author">
+          — Congresswoman Barbara Jordan
+        </span>
+      </blockquote>
+      <p>
+        In 2020, Cfpa will celebrate 25 years as an arts and community resource.
+        Thousands of students, artists and small businesses have thrived at Cfpa
+        in artist’s residencies, piano lessons, dance rehearsals, or summer
+        camps.
+      </p>
+      <p>
+        This expansion will impact all artists in the Twin Cities by offering a
+        new south Minneapolis location to practice, perform and produce work.
+      </p>
+
+      <h2 id="project">Support Economic Innovation.</h2>
+      <p>
+        Eight long-standing performance organizations and venues in the Twin
+        Cities have recently closed, reduced, or suspended operations. They
+        hosted the work of a wide range of artists, performance traditions,
+        races, gender identities, and cultures – all left in the wake.
+        Innovating alternate economic models for artists and arts organization
+        is a critical need.
+      </p>
+
+      <h2 id="goals">Give a gift.</h2>
+      <ul>
+        <li>
+          Provide affordable, high-quality facilities and equipment for artists
+          and audiences.
+        </li>
+        <li>
+          Sponsor artist residencies, mentorships, workshops, educational
+          seminars, and trainings.
+        </li>
+        <li>
+          Catalyze the integration of artists' work into the everyday lives of
+          our neighborhood and the metro.
+        </li>
+        <li>
+          Support the essential research, development and implementation of
+          models for artistic sustainability.
+        </li>
+      </ul>
+
+      <h2>You are our community.</h2>
+
+      <p>
+        Artists are our social and cultural leaders. We invite you to join us in
+        giving to this project. Investment in this project with your gift is a
+        commitment to the future of our Twin Cities arts community.
+      </p>
+      <br />
+      <hr />
+      <br /><br />
+      <div id="form-container">
+        <input
+          type="number"
+          placeholder="$ amount"
+          min="0.01"
+          step="0.01"
+          max="2500"
+          id="sq-amount"
+          class="sq-input"
+        />
+        <div id="sq-card-number"></div>
+        <div class="third">
+          <div id="sq-expiration-date"></div>
+        </div>
+        <div class="third">
+          <div id="sq-cvv"></div>
+        </div>
+        <div class="third">
+          <div id="sq-postal-code"></div>
+        </div>
+        <button
+          id="sq-creditcard"
+          class="button-credit-card"
+          onclick="onGetCardNonce(event)"
+        >
+          Donate <span class="donation-amt"></span>
+        </button>
+      </div>
+      <!-- end #form-container -->
+      <br />
+      <div class="donate-language">
+        The Artist Accelertor at <strong>cfpa</strong> is fiscally sponsored by
+        <strong>Revolution Dance Works</strong>, a federally recognized
+        501(c)(3) tax-exempt non-profit organization. Federal Tax ID
+        <strong>#82-2896342</strong>. All donations are tax deductible,
+        Donations processed by &nbsp;
+        <img src="images/square.svg" width="50" height="12" />
+      </div>
+    </div>
+    <!-- end #form-container -->
+    <br />
+    <br />
+    <br />
+    <div class="black">
+      <div class="contain">
+        <div class="donate-language">
+          <h3>Or Stay Connected via Email</h3>
+          <div class="contact">
+            <p class="h-card">
+              <a class="u-email" href="mailto:info@cfpampls.com"
+                >info@cfpampls.com</a
+              >
+              <strong>Address</strong><br />
+              <span class="p-street-address">3754 Pleasant Avenue South</span
+              ><br />
+              <span class="p-locality">Minneapolis, MN 55409-1227</span><br />
+              <strong>Phone</strong><br />
+              <span class="p-phone">(612) 821-9202</span>
+            </p>
+          </div>
+        </div>
+      </div>
+	</div>
+	<script type="text/javascript" src="js/sqpaymentform.js"></script>
+  </body>
+</html>
