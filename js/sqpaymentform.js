@@ -51,8 +51,7 @@ const paymentForm = new SqPaymentForm({
         method: "POST",
         headers: {
           Accept: "application/json",
-          "Content-Type": "application/json",
-          credentials: "include"
+          "Content-Type": "application/json"
         },
         body: JSON.stringify({
           nonce: nonce,
