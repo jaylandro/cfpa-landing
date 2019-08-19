@@ -47,7 +47,7 @@ const paymentForm = new SqPaymentForm({
       }
       var amount = document.getElementById("sq-amount").value;
 
-      fetch("/.netlify/functions/process-payment", {
+      fetch("https://cfpa-landing.netlify.com/.netlify/functions/process-payment", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -69,9 +69,9 @@ const paymentForm = new SqPaymentForm({
         })
         .then(data => {
           console.log(JSON.stringify(data));
-          document.getElementById("sq-amount").value = '';
+          // document.getElementById("sq-amount").value = '';
           alert(
-            "Payment complete successfully!\nCheck browser developer console for more details"
+            "Payment complete successfully!\n Thank you for your Donation."
           );
         })
         .catch(err => {
