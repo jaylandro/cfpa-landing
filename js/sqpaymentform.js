@@ -69,6 +69,7 @@ const paymentForm = new SqPaymentForm({
         })
         .then(data => {
           console.log(JSON.stringify(data));
+          document.getElementById("sq-amount").value = '';
           alert(
             "Payment complete successfully!\nCheck browser developer console for more details"
           );
