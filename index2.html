@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>cfpa | Center for Performing Arts | Mpls</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Serif|Fira+Sans"
+      rel="stylesheet"
+    />
+    <link href="css/cfpalanding.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="https://js.squareupsandbox.com/v2/paymentform"
+    ></script>
+  </head>
+  <body>
+      <div id="form-container">
+        <input
+          type="number"
+          placeholder="$ Amount"
+          min="0.01"
+          step="0.01"
+          max="2500"
+          id="sq-amount"
+          class="sq-input"
+        />
+        <div id="sq-card-number"></div>
+        <div class="third">
+          <div id="sq-expiration-date"></div>
+        </div>
+        <div class="third">
+          <div id="sq-cvv"></div>
+        </div>
+        <div class="third">
+          <div id="sq-postal-code"></div>
+        </div>
+        <button
+          id="sq-creditcard"
+          class="button-credit-card"
+          onclick="onGetCardNonce(event)"
+        >
+          Donate <span class="donation-amt"></span>
+        </button>
+      </div>
+      <!-- end #form-container -->
+	<script type="text/javascript" src="js/sqpaymentform.js"></script>
+  </body>
+</html>
