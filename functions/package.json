@@ -1,0 +1,14 @@
+{
+  "name": "process-payment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "process-payment.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jay Landro",
+  "license": "ISC",
+  "dependencies": {
+    "square-connect": "^2.20190814.1"
+  }
+}
