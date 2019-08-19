@@ -31,7 +31,11 @@ exports.handler = async (event, context, callback) => {
 	if (event.httpMethod !== "POST" || !event.body) {
 		return {
 			statusCode: 400,
-			body: ""
+			body: "",
+			headers: { 
+				"Access-Control-Allow-Origin" : "*",
+				"Access-Control-Allow-Credentials" : true 
+			}, 
 		};
 	}
 
@@ -54,12 +58,20 @@ exports.handler = async (event, context, callback) => {
 	  const response = await payments_api.createPayment(request_body);
 		return {
 			statusCode: 200,
-			body: `Payment Successful ${response}`
+			body: `Payment Successful ${response}`,
+			headers: { 
+				"Access-Control-Allow-Origin" : "*",
+				"Access-Control-Allow-Credentials" : true 
+			}, 
 		};
 	} catch(error) {
 		return {
 			statusCode: 500,
-			body: `Payment Failure ${error.response.text}`
+			body: `Payment Failure ${error.response.text}`,
+			headers: { 
+				"Access-Control-Allow-Origin" : "*",
+				"Access-Control-Allow-Credentials" : true 
+			}, 
 		};
 	}
 };
