@@ -163,7 +163,7 @@ fieldset {
 
 #form-container {
 	position: relative;
-	/* max-width: 480px; */
+	max-width: 480px;
 	margin: 0 auto;
 	/* top: 50%; */
 	/* transform: translateY(-50%); */

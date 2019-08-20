@@ -69,7 +69,7 @@ const paymentForm = new SqPaymentForm({
         })
         .then(data => {
           console.log(JSON.stringify(data));
-          // document.getElementById("sq-amount").value = '';
+          window.location.href = "/thank-you.html"
           alert(
             "Payment complete successfully!\n Thank you for your Donation."
           );
