@@ -25,17 +25,13 @@ const oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = accessToken;
 
 
-defaultClient.basePath = 'https://connect.squareupsandbox.com';
+defaultClient.basePath = 'https://connect.squareup.com';
 
 exports.handler = async (event, context, callback) => {
 	if (event.httpMethod !== "POST" || !event.body) {
 		return {
 			statusCode: 400,
-			body: ""
-			// headers: { 
-			// 	"Access-Control-Allow-Origin" : "*",
-			// 	"Access-Control-Allow-Credentials" : true 
-			// }, 
+			body: "" 
 		};
 	}
 
