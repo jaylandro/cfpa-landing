@@ -77,7 +77,7 @@ const paymentForm = new SqPaymentForm({
         .catch(err => {
           console.error(err);
           alert(
-            "Payment failed to complete!\nCheck browser developer console for more details"
+            "Donation failed to complete\nPlease Validate your card details"
           );
         });
     }
