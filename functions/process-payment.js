@@ -15,7 +15,7 @@ const squareConnect = require('square-connect');
 const crypto = require('crypto');
 
 // Set the Access Token and Location Id
-const accessToken = process.env.SQUARE_SANDBOX;
+const accessToken = process.env.SQUARE_PROD;
 
 // Set Square Connect credentials
 const defaultClient = squareConnect.ApiClient.instance;

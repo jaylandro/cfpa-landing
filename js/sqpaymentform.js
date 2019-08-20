@@ -1,6 +1,6 @@
 const paymentForm = new SqPaymentForm({
   //TODO: Replace with your sandbox application ID
-  applicationId: "sandbox-sq0idb-M8CrOY8j1yyIVHBE_rmlvg",
+  applicationId: "sq0idp-5rZb-kKv0uPBJw0vP4rNIg",
   inputClass: "sq-input",
   autoBuild: false,
   inputStyles: [
